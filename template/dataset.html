@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ArmtemplateTestDatasetIn Form</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .form {
+            width: 500px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        .form-group input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #0069d9;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.8em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <div class="form-title">ArmtemplateTestDatasetIn Form</div>
+        <form id="armtemplate-form" action="/output" method="post">
+            <div class="form-group">
+                <label for="dataset-name">Dataset Name:</label>
+                <input type="text" id="dataset-name" name="name" required>
+                <div class="error-message" id="dataset-name-error"></div>
+            </div>
+            <div class="form-group">
+                <label for="file-name">File Name:</label>
+                <input type="text" id="file-name" name="fileName" required>
+                <div class="error-message" id="file-name-error"></div>
+            </div>
+            <div class="form-group">
+                <label for="folder-path">Folder Path:</label>
+                <input type="text" id="folder-path" name="folderPath" required>
+                <div class="error-message" id="folder-path-error"></div>
+            </div>
+            <div class="form-group">
+                <label for="container-name">Container Name:</label>
+                <input type="text" id="container-name" name="container" required>
+                <div class="error-message" id="container-name-error"></div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Generate ArmtemplateTestDatasetIn">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
